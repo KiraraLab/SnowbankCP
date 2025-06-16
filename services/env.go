@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strconv"
 
 	"github.com/joho/godotenv"
@@ -35,12 +34,6 @@ func LoadEnv() (EnvConfig, error) {
 	envStruct.AdminUser = envMap["SNOWCP_ADMIN_USER"]
 	envStruct.AdminPass = envMap["SNOWCP_ADMIN_PASS"]
 	envStruct.Debug = envMap["SNOWCP_DEBUG"] == "true"
-
-	fmt.Println("SnowCP Environment Configurations:")
-	fmt.Printf("Host: %s\n", envStruct.Host)
-	fmt.Printf("Port: %d\n", envStruct.Port)
-	fmt.Printf("Root: %s\n", envStruct.Root)
-	fmt.Printf("Is Debug Mode: %t\n", envStruct.Debug)
 
 	return envStruct, nil
 }
