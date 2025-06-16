@@ -2,7 +2,7 @@
 
 A lightweight, fast data collector and web control panel for embedded Linux devices.
 
-Delighted by Prometheus and Telegraf, Designed flexiable IoT data collection and transfer.
+Designed for collecting embedded TS data flexibly. Inspired by Prometheus and Telegraf.
 
 ## Features
 
