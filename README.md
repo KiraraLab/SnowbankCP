@@ -23,6 +23,6 @@ Designed for collecting embedded TS data flexibly. Inspired by Prometheus and Te
 
 
 
-# Project Structure
+## Project Structure
 
 <img src="https://raw.githubusercontent.com/kiraralab/snowbankcp/main/docs/static/img/project_struct.drawio.svg" alt="Project Structure"/>
