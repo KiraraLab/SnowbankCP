@@ -7,8 +7,8 @@ build-platform:
   CGO_ENABLED=0 && GOOS=darwin && GOARCH=arm64 &&	make build 
 
 run:
-	# apply .env to the environment
-	source ../.env.example && \
+# apply .env to the environment 
+#	source ../.env.example &&
 	go run .
 
 clean:

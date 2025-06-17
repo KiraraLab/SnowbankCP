@@ -9,7 +9,7 @@ import (
 
 func main() {
 
-	splashFigure := figure.NewFigure("SnowCP powered by Go", "", true)
+	splashFigure := figure.NewFigure("SnowbankCP + Go", "", true)
 	splashFigure.Print()
 
 	// Initialize configuration
