@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2025-06-17T02:32:45.562Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.8 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="q63YzlNnwd_WrrC3aVHR" version="24.4.8" type="device">
+<mxfile host="Electron" modified="2025-06-17T02:41:34.093Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.8 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="HsE6iNpxwdVRF8ULx7_t" version="24.4.8" type="device">
   <diagram id="6I0OCvxSQrVGMHxT2VVA" name="Page-1">
     <mxGraphModel dx="1735" dy="1195" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -25,7 +25,7 @@
         <mxCell id="dKdSaXE48SgPbhcamS2K-55" value="Ob&lt;span style=&quot;background-color: initial;&quot;&gt;servability&lt;/span&gt;" style="html=1;whiteSpace=wrap;fillColor=#CCE5FF;shape=mxgraph.archimate3.application;appType=collab;archiType=square;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="780" y="660" width="150" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="dKdSaXE48SgPbhcamS2K-56" value="Event Triggrt" style="html=1;whiteSpace=wrap;fillColor=#CCE5FF;shape=mxgraph.archimate3.application;appType=event;archiType=rounded;fontSize=14;" parent="1" vertex="1">
+        <mxCell id="dKdSaXE48SgPbhcamS2K-56" value="Event Trigger" style="html=1;whiteSpace=wrap;fillColor=#CCE5FF;shape=mxgraph.archimate3.application;appType=event;archiType=rounded;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="980" y="660" width="150" height="75" as="geometry" />
         </mxCell>
         <mxCell id="A7WHQfADSDFaVfV81xtq-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;" edge="1" parent="1" source="dKdSaXE48SgPbhcamS2K-57" target="dKdSaXE48SgPbhcamS2K-56">
