@@ -1,4 +1,6 @@
 .DS_Store
 /assets
-/build
+build
 *.bkp
+
+node_modules
