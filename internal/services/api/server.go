@@ -3,9 +3,9 @@ package api
 import (
 	"log"
 
-	"github.com/gin-contrib/sessions"
-	"github.com/gin-contrib/sessions/cookie"
+	"github.com/gin-contrib/static"
 	"github.com/gin-gonic/gin"
+	"github.com/kiraralab/snowbankcp/ui/webpages"
 )
 
 // Thanks to otraore for the code example
@@ -18,7 +18,10 @@ const (
 
 func StartServer() {
 	// Initialize the engine
-	e := engine()
+	e, err := engine()
+	if err != nil {
+		log.Fatal("Unable to initialize engine:", err)
+	}
 
 	// Run the engine on port 8080
 	if err := e.Run(":8080"); err != nil {
@@ -26,7 +29,7 @@ func StartServer() {
 	}
 }
 
-func engine() *gin.Engine {
+func engine() (*gin.Engine, error) {
 	// Create a new gin engine
 	r := gin.New()
 
@@ -35,7 +38,13 @@ func engine() *gin.Engine {
 
 	// Setup the cookie store for session management
 	// This middleware will automatically handle session cookie reading/writing
-	r.Use(sessions.Sessions("mysession", cookie.NewStore([]byte(secret))))
+	// r.Use(sessions.Sessions("mysession", cookie.NewStore([]byte(secret))))
+
+	fs, err := static.EmbedFolder(webpages.WebPageFS, "build/client")
+	if err != nil {
+		return nil, err
+	}
+	r.Use(static.Serve("/", fs))
 
 	// Public routes that don't require authentication
 	r.POST("/login", login)  // Handles user login
@@ -50,5 +59,5 @@ func engine() *gin.Engine {
 		private.GET("/status", status) // Returns login status
 	}
 
-	return r
+	return r, nil
 }

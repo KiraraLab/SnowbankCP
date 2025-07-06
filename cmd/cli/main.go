@@ -4,15 +4,15 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/common-nighthawk/go-figure"
-	"github.com/kiraralab/snowbankcp/api"
+	figure "github.com/common-nighthawk/go-figure"
+	"github.com/kiraralab/snowbankcp/internal/services/api"
 )
 
 func main() {
 
 	splashFigure := figure.NewFigure("SnowbankCP + Go", "", true)
 	splashFigure.Print()
-
+	println()
 	// Initialize configuration
 	env, err := LoadEnv()
 	if err != nil {
