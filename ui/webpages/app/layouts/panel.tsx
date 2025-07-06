@@ -3,7 +3,7 @@ import { Welcome } from "~/welcome/welcome";
 
 export default function Panel() {
 	return (
-		<div className={"bg-gray-100 dark:bg-gray-800 h-dvh w-full grid grid-cols-24"} style={styles.Layout}>
+		<div className={"bg-gray-100 dark:bg-gray-800 h-screen w-full grid grid-cols-24"} style={styles.Layout}>
 			<div className="col-span-1">
 				<div className="bg-transparent h-full p-32 flex items-center justify-between flex-left grid grid-rows-3">
 						{/* Sidebar content can go here */}
@@ -25,11 +25,10 @@ export default function Panel() {
 						</div>
 					</div>
 				</nav>
-				<div className="bg-white w-full h-full rounded shadow-[0_4px_12px_0_rgba(0,0,0,0.1)]">
+				<div className="bg-white w-full h-[calc(100vh-40px)] rounded shadow-[0_4px_12px_0_rgba(0,0,0,0.1)] overflow-y-auto">
 					<Welcome />
 				</div>
 			</div>
-
 		</div>
 	)
 }
