@@ -2,14 +2,14 @@
 import { Outlet } from "react-router";
 
 export default function Panel({ children }: { children?: React.ReactNode }) {
+
 	return (
-		<div className={"bg-gray-100 dark:bg-gray-950 h-screen w-full grid grid-cols-24"} style={styles.Layout}>
-			
-			<div className="col-span-24 xl:col-span-1 w-full h-20 xl:justify-center xl:h-full pt-[40px]">
-				<div className="bg-transparent h-full xl:w-full flex xl:flex-col justify-between">
+		<div className={"bg-gray-100 dark:bg-gray-950 h-screen w-full grid grid-cols-24"}>
+			<div className={"col-span-24 xl:col-span-1 w-full h-min xl:justify-center xl:h-full pt-[40px]"}>
+				<div className="bg-transparent h-full xl:w-full flex xl:flex-col justify-between items-center xl:items-start">
 					{/* Sidebar content can go here */}
 					<div className="flex xl:flex-col flex-row h-full xl:w-full items-center">
-						{/* <div className="bg-gray-200 h-full xl:h-min xl:w-full size-full">hello</div> */}
+						{/* <div className="bg-gray-200 h-full xl:h-min xl:w-full size-full">hellof</div> */}
 					</div>
 					<div className="flex xl:flex-col flex-row items-center">
 						<a className="items-center p-3 m-3 rounded hover:bg-[rgba(0,0,0,0.1)] dark:hover:bg-[rgba(255,255,255,0.1)]" aria-label="Open settings" href="/settings">
@@ -19,7 +19,7 @@ export default function Panel({ children }: { children?: React.ReactNode }) {
 				</div>
 			</div>
 
-			<div className="xl:col-span-23 col-span-24 h-full w-full flex flex-col">
+			<div className={"xl:col-span-23 col-span-24 h-full w-full flex flex-col"}>
 
 				<nav className="fixed xl:relative bg-transparent min-h-[32px] top-0 left-0 w-full text-white justify-between items-center pt-3 pr-3 pb-2 pl-3" >
 					<div className="flex items-center justify-between flex-left grid grid-cols-3">
@@ -36,7 +36,7 @@ export default function Panel({ children }: { children?: React.ReactNode }) {
 					</div>
 				</nav>
 				
-				<div className="bg-white dark:bg-gray-900 w-full h-[calc(100vh-104px)] xl:h-[calc(100vh-40px)] rounded shadow-[0_4px_12px_0_rgba(0,0,0,0.1)] dark:shadow-[0_4px_12px_0_rgba(51,232,214,0.2)] overflow-y-auto">
+				<div className="bg-white dark:bg-gray-900 w-full h-[calc(100vh-104px)] xl:h-[calc(100vh-40px)] rounded shadow-[0_4px_12px_0_rgba(0,0,0,0.1)] dark:shadow-[0_4px_12px_0_rgba(51,232,214,0.2)] overflow-auto">
 					{children || <Outlet />}
 				</div>
 			</div>
